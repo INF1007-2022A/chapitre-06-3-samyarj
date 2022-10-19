@@ -10,8 +10,11 @@ import itertools
 def get_maximums(numbers: list[list]) -> list:
 	return [max(small_list) for small_list in numbers]
 
-def join_integers(numbers):
-	return 0
+def join_integers(numbers: list[int]) -> int:
+	result = ''
+	for num in numbers:
+		result += str(num)
+	return int(result)
 
 def generate_prime_numbers(limit):
 	return [0]

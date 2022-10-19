@@ -21,7 +21,6 @@ def generate_prime_numbers(limit):
 
 def combine_strings_and_numbers(strings, num_combinations, excluded_multiples) -> list[str]:
 	result = []
-
 	for i in range(1, num_combinations+1):
 		if excluded_multiples == None:
 			result.append(strings[0] + str(i))
